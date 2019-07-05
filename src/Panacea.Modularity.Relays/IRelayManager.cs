@@ -8,9 +8,13 @@ namespace Panacea.Modularity.Relays
 {
     public interface IRelayManager
     {
+        bool BlindsAttached { get; }
+
         Task<bool> SetBlindsDownAsync(bool on);
 
         Task<bool> SetBlindsUpAsync(bool on);
+
+        bool NurseCallAttached { get; }
 
         Task<bool> SetNurseCallAsync(bool on);
 
