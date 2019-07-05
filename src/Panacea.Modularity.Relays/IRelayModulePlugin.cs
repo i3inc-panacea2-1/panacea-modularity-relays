@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Panacea.Modularity.Relays
 {
-    public interface IRelayModulePlugin
+    public interface IRelayModulePlugin:IPlugin
     {
         Task<IRelayModule> GetModuleAsync();
     }
